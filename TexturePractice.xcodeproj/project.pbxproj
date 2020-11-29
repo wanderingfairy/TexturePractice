@@ -16,6 +16,7 @@
 		1500824425716955003FBCCD /* FirstNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1500824325716955003FBCCD /* FirstNode.swift */; };
 		1500827B25739228003FBCCD /* FirstReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1500827A25739228003FBCCD /* FirstReactor.swift */; };
 		150083242573FD91003FBCCD /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150083232573FD91003FBCCD /* URL.swift */; };
+		150083292574035B003FBCCD /* ASLayoutElementStyle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150083282574035B003FBCCD /* ASLayoutElementStyle+Extension.swift */; };
 		B24A102C5E7E2F6A4101C799 /* Pods_TexturePractice_TexturePracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68335646F49C7147BC43A359 /* Pods_TexturePractice_TexturePracticeUITests.framework */; };
 		D70131C5C1F187BDA27B4163 /* Pods_TexturePracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0964AE2367359C125A04BB06 /* Pods_TexturePracticeTests.framework */; };
 		DE489D78D4DB5F419A679BF3 /* Pods_TexturePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC19E866B4733756C8C6AB10 /* Pods_TexturePractice.framework */; };
@@ -57,6 +58,7 @@
 		1500824325716955003FBCCD /* FirstNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNode.swift; sourceTree = "<group>"; };
 		1500827A25739228003FBCCD /* FirstReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstReactor.swift; sourceTree = "<group>"; };
 		150083232573FD91003FBCCD /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		150083282574035B003FBCCD /* ASLayoutElementStyle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASLayoutElementStyle+Extension.swift"; sourceTree = "<group>"; };
 		68335646F49C7147BC43A359 /* Pods_TexturePractice_TexturePracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturePractice_TexturePracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7909FC2E055252DBEC58632 /* Pods-TexturePracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturePracticeTests.release.xcconfig"; path = "Target Support Files/Pods-TexturePracticeTests/Pods-TexturePracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB4FF5AEED734643C3136BF0 /* Pods-TexturePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturePractice.release.xcconfig"; path = "Target Support Files/Pods-TexturePractice/Pods-TexturePractice.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				150081C925715A3D003FBCCD /* LaunchScreen.storyboard */,
 				150081CC25715A3D003FBCCD /* Info.plist */,
 				150083232573FD91003FBCCD /* URL.swift */,
+				150083282574035B003FBCCD /* ASLayoutElementStyle+Extension.swift */,
 			);
 			path = TexturePractice;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150083292574035B003FBCCD /* ASLayoutElementStyle+Extension.swift in Sources */,
 				150083242573FD91003FBCCD /* URL.swift in Sources */,
 				1500824425716955003FBCCD /* FirstNode.swift in Sources */,
 				1500827B25739228003FBCCD /* FirstReactor.swift in Sources */,

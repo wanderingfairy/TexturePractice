@@ -4,36 +4,39 @@
 //
 //  Created by 정의석 on 2020/11/28.
 //
-import UIKit
-import Then
-import AsyncDisplayKit
-import RxSwift
-import ReactorKit
-import PINRemoteImage
 
-class FirstNode: ASDisplayNode, View{
+import UIKit
+import RxSwift
+import RxCocoa
+import RxViewController
+import RxOptional
+
+import AsyncDisplayKit
+import ReactorKit
+
+import PINRemoteImage
+import SwiftRichString
+import Then
+
+class FirstNode: ASDisplayNode, View {
   typealias Reactor = FirstReactor
   
   var disposeBag: DisposeBag = DisposeBag()
   
   struct Const {
     static let imagePreviewColor: UIColor = .lightGray
-    static let message: String = "Hello. How are you doing?"
   }
   
   lazy var titleNode: ASTextNode = ASTextNode().then {
-    $0.attributedText = NSAttributedString(string: "Title Node", attributes: [.font: UIFont.systemFont(ofSize: 18)])
     $0.backgroundColor = .orange
   }
   
   lazy var messageNode: ASTextNode = ASTextNode().then {
-    $0.attributedText = NSAttributedString(string: Const.message, attributes: [.font: UIFont.systemFont(ofSize: 14)])
     $0.backgroundColor = .magenta
   }
   
   lazy var previewImageNode: ASNetworkImageNode = ASNetworkImageNode().then {
     $0.backgroundColor = Const.imagePreviewColor
-    $0.url = ImageURL.profileImage.url
     $0.cornerRoundingType = .defaultSlowCALayer
     $0.cornerRadius = 39
   }
@@ -51,14 +54,35 @@ class FirstNode: ASDisplayNode, View{
   }
   
   func bind(reactor: Reactor) {
+    reactor.action.onNext(.initAction) // AttributedString Init
     
+    reactor.state.asObservable()
+      .map { $0.titleAttrStr }
+      .bind { [weak self] in
+        self?.titleNode.attributedText = $0
+      }
+      .disposed(by: disposeBag)
+    
+    reactor.state.asObservable()
+      .map { $0.messageAttrStr }
+      .bind { [weak self] in
+        self?.messageNode.attributedText = $0
+      }
+      .disposed(by: disposeBag)
+    
+    reactor.state.asObservable()
+      .map { $0.profileImageURL }
+      .bind { [weak self] in
+        self?.previewImageNode.url = $0
+      }
+      .disposed(by: disposeBag)
   }
 }
 
 extension FirstNode {
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
     let cell = self.looklikeCellLayoutSpec(constrainedSize)
-   // NOTE: define flexBox attribute
+    // NOTE: define flexBox attribute
     cell.style.nonShrink().grow(0.0)
     
     return ASStackLayoutSpec(direction: .vertical,
@@ -95,32 +119,7 @@ extension FirstNode {
                                    children: [titleNode, messageNode])
     return ASInsetLayoutSpec(insets: .init(top: 10, left: 0, bottom: 0, right: 0), child: layout)
   }
-
-
-  
 }
 
-extension ASLayoutElementStyle {
-  /** If the sum of childrens' stack dimensions is grater than the maximum size, should this object shrink
-   */
-  @discardableResult func shrink(_ scale: CGFloat) -> ASLayoutElementStyle {
-    self.flexShrink = scale
-    return self
-  }
-  
-  @discardableResult func grow(_ scale: CGFloat) -> ASLayoutElementStyle {
-    self.flexGrow = scale
-    return self
-  }
-  
-  @discardableResult func nonGrow() -> ASLayoutElementStyle {
-    self.flexGrow = 0.0
-    return self
-  }
-  
-  @discardableResult func nonShrink() -> ASLayoutElementStyle {
-    self.flexShrink = 0.0
-    return self
-  }
-}
+
 
