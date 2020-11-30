@@ -16,11 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    let UIKitNavController = UINavigationController(rootViewController: MainViewController())
+    let UIKitNavControllerMain = UINavigationController(rootViewController: MainViewController())
+    UIKitNavControllerMain.tabBarItem = .init(title: "Main", image: nil, selectedImage: nil)
     
+    let UIKitNavControllerSecond = UINavigationController(rootViewController: SecondViewController())
+    UIKitNavControllerSecond.tabBarItem = .init(title: "Second", image: nil, selectedImage: nil)
     let tabBarController = UITabBarController()
-    tabBarController.viewControllers = [UIKitNavController]
-    tabBarController.selectedIndex = 0
+    
+    let UIKitNavControllerThird = UINavigationController(rootViewController: ThirdViewController())
+    UIKitNavControllerThird.tabBarItem = .init(title: "Third", image: nil, selectedImage: nil)
+    
+    tabBarController.viewControllers = [UIKitNavControllerMain, UIKitNavControllerSecond, UIKitNavControllerThird]
+    tabBarController.selectedIndex = 2
     
     window = UIWindow()
     window?.backgroundColor = .white

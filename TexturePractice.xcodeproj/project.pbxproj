@@ -20,6 +20,13 @@
 		B24A102C5E7E2F6A4101C799 /* Pods_TexturePractice_TexturePracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68335646F49C7147BC43A359 /* Pods_TexturePractice_TexturePracticeUITests.framework */; };
 		D70131C5C1F187BDA27B4163 /* Pods_TexturePracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0964AE2367359C125A04BB06 /* Pods_TexturePracticeTests.framework */; };
 		DE489D78D4DB5F419A679BF3 /* Pods_TexturePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC19E866B4733756C8C6AB10 /* Pods_TexturePractice.framework */; };
+		F677F50825747D3B00D02E0B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F50725747D3B00D02E0B /* SecondViewController.swift */; };
+		F677F52525748C8500D02E0B /* SecondNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F52425748C8500D02E0B /* SecondNode.swift */; };
+		F677F52A25748CC400D02E0B /* SecondReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F52925748CC400D02E0B /* SecondReactor.swift */; };
+		F677F53225748E7C00D02E0B /* CellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F53125748E7C00D02E0B /* CellNode.swift */; };
+		F677F53A2574951400D02E0B /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F5392574951400D02E0B /* MessageModel.swift */; };
+		F677F5472574CB2400D02E0B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F5462574CB2400D02E0B /* ThirdViewController.swift */; };
+		F677F54C2574CC0A00D02E0B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F54B2574CC0A00D02E0B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +71,13 @@
 		BB4FF5AEED734643C3136BF0 /* Pods-TexturePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturePractice.release.xcconfig"; path = "Target Support Files/Pods-TexturePractice/Pods-TexturePractice.release.xcconfig"; sourceTree = "<group>"; };
 		BE25DA8B3D111C094CA312C9 /* Pods-TexturePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturePractice.debug.xcconfig"; path = "Target Support Files/Pods-TexturePractice/Pods-TexturePractice.debug.xcconfig"; sourceTree = "<group>"; };
 		C6BBE176A7CA2873CD1333E8 /* Pods-TexturePractice-TexturePracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexturePractice-TexturePracticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-TexturePractice-TexturePracticeUITests/Pods-TexturePractice-TexturePracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F677F50725747D3B00D02E0B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F677F52425748C8500D02E0B /* SecondNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNode.swift; sourceTree = "<group>"; };
+		F677F52925748CC400D02E0B /* SecondReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondReactor.swift; sourceTree = "<group>"; };
+		F677F53125748E7C00D02E0B /* CellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNode.swift; sourceTree = "<group>"; };
+		F677F5392574951400D02E0B /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		F677F5462574CB2400D02E0B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F677F54B2574CC0A00D02E0B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FC19E866B4733756C8C6AB10 /* Pods_TexturePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,10 +134,11 @@
 		150081BD25715A3C003FBCCD /* TexturePractice */ = {
 			isa = PBXGroup;
 			children = (
+				F677F5542574D33100D02E0B /* Model */,
+				F677F5502574D2F700D02E0B /* First */,
+				F677F5512574D2FC00D02E0B /* Second */,
+				F677F5522574D30100D02E0B /* Third */,
 				150081BE25715A3C003FBCCD /* AppDelegate.swift */,
-				150081C225715A3C003FBCCD /* MainViewController.swift */,
-				1500824325716955003FBCCD /* FirstNode.swift */,
-				1500827A25739228003FBCCD /* FirstReactor.swift */,
 				150081C725715A3D003FBCCD /* Assets.xcassets */,
 				150081C925715A3D003FBCCD /* LaunchScreen.storyboard */,
 				150081CC25715A3D003FBCCD /* Info.plist */,
@@ -172,6 +187,60 @@
 				B7909FC2E055252DBEC58632 /* Pods-TexturePracticeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F677F5502574D2F700D02E0B /* First */ = {
+			isa = PBXGroup;
+			children = (
+				150081C225715A3C003FBCCD /* MainViewController.swift */,
+				1500824325716955003FBCCD /* FirstNode.swift */,
+				1500827A25739228003FBCCD /* FirstReactor.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		F677F5512574D2FC00D02E0B /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				F677F5532574D32000D02E0B /* CellNode */,
+				F677F50725747D3B00D02E0B /* SecondViewController.swift */,
+				F677F52425748C8500D02E0B /* SecondNode.swift */,
+				F677F52925748CC400D02E0B /* SecondReactor.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		F677F5522574D30100D02E0B /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				F677F5552574D34200D02E0B /* Cell */,
+				F677F5462574CB2400D02E0B /* ThirdViewController.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		F677F5532574D32000D02E0B /* CellNode */ = {
+			isa = PBXGroup;
+			children = (
+				F677F53125748E7C00D02E0B /* CellNode.swift */,
+			);
+			path = CellNode;
+			sourceTree = "<group>";
+		};
+		F677F5542574D33100D02E0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F677F5392574951400D02E0B /* MessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F677F5552574D34200D02E0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F677F54B2574CC0A00D02E0B /* TableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,11 +480,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F677F54C2574CC0A00D02E0B /* TableViewCell.swift in Sources */,
 				150083292574035B003FBCCD /* ASLayoutElementStyle+Extension.swift in Sources */,
 				150083242573FD91003FBCCD /* URL.swift in Sources */,
 				1500824425716955003FBCCD /* FirstNode.swift in Sources */,
+				F677F52A25748CC400D02E0B /* SecondReactor.swift in Sources */,
 				1500827B25739228003FBCCD /* FirstReactor.swift in Sources */,
+				F677F53225748E7C00D02E0B /* CellNode.swift in Sources */,
 				150081C325715A3C003FBCCD /* MainViewController.swift in Sources */,
+				F677F52525748C8500D02E0B /* SecondNode.swift in Sources */,
+				F677F53A2574951400D02E0B /* MessageModel.swift in Sources */,
+				F677F50825747D3B00D02E0B /* SecondViewController.swift in Sources */,
+				F677F5472574CB2400D02E0B /* ThirdViewController.swift in Sources */,
 				150081BF25715A3C003FBCCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
