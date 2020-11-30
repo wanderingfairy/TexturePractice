@@ -18,7 +18,7 @@ PODS:
   - PINRemoteImage/PINCache (3.0.3):
     - PINCache (~> 3.0.3)
     - PINRemoteImage/Core
-  - ReactorKit (2.1.0):
+  - ReactorKit (2.1.1):
     - RxSwift (~> 5.0)
     - WeakMapTable (~> 1.1)
   - RxCocoa (5.1.1):
@@ -118,7 +118,7 @@ SPEC CHECKSUMS:
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
-  ReactorKit: 12a93358c554bb3f167b16b14c40374fa9cd5acd
+  ReactorKit: 6d894a20c3d508344320901cd8e386fde92df4b6
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxDataSources-Texture: b2db41c0ece2366dbd0189ef2903076c37d62dab
@@ -134,4 +134,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e8d5ccf59a76b4c3173f397904614e6fe398d1bb
 
-COCOAPODS: 1.10.0.rc.1
+COCOAPODS: 1.10.0

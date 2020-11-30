@@ -133,3 +133,6 @@ extension SecondNode {
 //    func tableNode(_ tableNode: ASTableNode, willBeginBatchFetchWith context: ASBatchContext) {
 //    }
 }
+
+let node = SecondNode()
+let output = node.layoutSpecThatFits(ASSizeRangeZero).asciiArtString()

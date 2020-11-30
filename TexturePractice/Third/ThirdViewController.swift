@@ -13,6 +13,7 @@ class ThirdViewController: UIViewController {
     
     lazy var tableView = UITableView().then {
         $0.rowHeight = 98
+      $0.backgroundColor = .orange
     }
     let messages = dummyMessages
     

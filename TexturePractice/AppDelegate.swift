@@ -7,6 +7,7 @@
 
 import UIKit
 import Then
+import AsyncDisplayKit
 
 
 @main
@@ -15,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    ASDisplayNode.shouldShowRangeDebugOverlay = true
     
     let UIKitNavControllerMain = UINavigationController(rootViewController: MainViewController())
     UIKitNavControllerMain.tabBarItem = .init(title: "Main", image: nil, selectedImage: nil)
