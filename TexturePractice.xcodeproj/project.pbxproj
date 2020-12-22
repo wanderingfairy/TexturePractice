@@ -27,6 +27,15 @@
 		F677F53A2574951400D02E0B /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F5392574951400D02E0B /* MessageModel.swift */; };
 		F677F5472574CB2400D02E0B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F5462574CB2400D02E0B /* ThirdViewController.swift */; };
 		F677F54C2574CC0A00D02E0B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677F54B2574CC0A00D02E0B /* TableViewCell.swift */; };
+		F6FE56B12591E6DF00DFF614 /* ProfileAlbumNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56A82591E6DF00DFF614 /* ProfileAlbumNode.swift */; };
+		F6FE56B22591E6DF00DFF614 /* ProfileItemNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56A92591E6DF00DFF614 /* ProfileItemNodeReactor.swift */; };
+		F6FE56B32591E6DF00DFF614 /* ProfileItemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AA2591E6DF00DFF614 /* ProfileItemNode.swift */; };
+		F6FE56B42591E6DF00DFF614 /* ProfileHeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AB2591E6DF00DFF614 /* ProfileHeaderNode.swift */; };
+		F6FE56B52591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AC2591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift */; };
+		F6FE56B62591E6DF00DFF614 /* ProfileDisplayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AD2591E6DF00DFF614 /* ProfileDisplayNode.swift */; };
+		F6FE56B72591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AE2591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift */; };
+		F6FE56B82591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */; };
+		F6FE56B92591E6DF00DFF614 /* ProfileASDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +87,15 @@
 		F677F5392574951400D02E0B /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		F677F5462574CB2400D02E0B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		F677F54B2574CC0A00D02E0B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F6FE56A82591E6DF00DFF614 /* ProfileAlbumNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAlbumNode.swift; sourceTree = "<group>"; };
+		F6FE56A92591E6DF00DFF614 /* ProfileItemNodeReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileItemNodeReactor.swift; sourceTree = "<group>"; };
+		F6FE56AA2591E6DF00DFF614 /* ProfileItemNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileItemNode.swift; sourceTree = "<group>"; };
+		F6FE56AB2591E6DF00DFF614 /* ProfileHeaderNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderNode.swift; sourceTree = "<group>"; };
+		F6FE56AC2591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderNodeReactor.swift; sourceTree = "<group>"; };
+		F6FE56AD2591E6DF00DFF614 /* ProfileDisplayNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDisplayNode.swift; sourceTree = "<group>"; };
+		F6FE56AE2591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAlbumNodeReactor.swift; sourceTree = "<group>"; };
+		F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDisplayNodeReactor.swift; sourceTree = "<group>"; };
+		F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileASDKViewController.swift; sourceTree = "<group>"; };
 		FC19E866B4733756C8C6AB10 /* Pods_TexturePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +155,7 @@
 				F677F5542574D33100D02E0B /* Model */,
 				F677F5502574D2F700D02E0B /* First */,
 				F677F5512574D2FC00D02E0B /* Second */,
+				F6FE56A72591E6DF00DFF614 /* Texture */,
 				F677F5522574D30100D02E0B /* Third */,
 				150081BE25715A3C003FBCCD /* AppDelegate.swift */,
 				150081C725715A3D003FBCCD /* Assets.xcassets */,
@@ -241,6 +260,22 @@
 				F677F54B2574CC0A00D02E0B /* TableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		F6FE56A72591E6DF00DFF614 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				F6FE56A82591E6DF00DFF614 /* ProfileAlbumNode.swift */,
+				F6FE56A92591E6DF00DFF614 /* ProfileItemNodeReactor.swift */,
+				F6FE56AA2591E6DF00DFF614 /* ProfileItemNode.swift */,
+				F6FE56AB2591E6DF00DFF614 /* ProfileHeaderNode.swift */,
+				F6FE56AC2591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift */,
+				F6FE56AD2591E6DF00DFF614 /* ProfileDisplayNode.swift */,
+				F6FE56AE2591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift */,
+				F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */,
+				F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */,
+			);
+			path = Texture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,15 +516,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F677F54C2574CC0A00D02E0B /* TableViewCell.swift in Sources */,
+				F6FE56B92591E6DF00DFF614 /* ProfileASDKViewController.swift in Sources */,
+				F6FE56B22591E6DF00DFF614 /* ProfileItemNodeReactor.swift in Sources */,
+				F6FE56B12591E6DF00DFF614 /* ProfileAlbumNode.swift in Sources */,
 				150083292574035B003FBCCD /* ASLayoutElementStyle+Extension.swift in Sources */,
 				150083242573FD91003FBCCD /* URL.swift in Sources */,
+				F6FE56B52591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift in Sources */,
 				1500824425716955003FBCCD /* FirstNode.swift in Sources */,
+				F6FE56B32591E6DF00DFF614 /* ProfileItemNode.swift in Sources */,
+				F6FE56B62591E6DF00DFF614 /* ProfileDisplayNode.swift in Sources */,
 				F677F52A25748CC400D02E0B /* SecondReactor.swift in Sources */,
 				1500827B25739228003FBCCD /* FirstReactor.swift in Sources */,
+				F6FE56B82591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift in Sources */,
 				F677F53225748E7C00D02E0B /* CellNode.swift in Sources */,
 				150081C325715A3C003FBCCD /* MainViewController.swift in Sources */,
 				F677F52525748C8500D02E0B /* SecondNode.swift in Sources */,
 				F677F53A2574951400D02E0B /* MessageModel.swift in Sources */,
+				F6FE56B42591E6DF00DFF614 /* ProfileHeaderNode.swift in Sources */,
+				F6FE56B72591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift in Sources */,
 				F677F50825747D3B00D02E0B /* SecondViewController.swift in Sources */,
 				F677F5472574CB2400D02E0B /* ThirdViewController.swift in Sources */,
 				150081BF25715A3C003FBCCD /* AppDelegate.swift in Sources */,
@@ -574,6 +618,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -663,6 +708,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
+				ENABLE_NS_ASSERTIONS = YES;
 				INFOPLIST_FILE = TexturePractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

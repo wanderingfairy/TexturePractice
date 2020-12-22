@@ -53,6 +53,7 @@ class SecondNode: ASDisplayNode, View, ASTableDataSource, ASTableDelegate {
     }
     
     override init() {
+        print("Node init()")
         self.messages.accept(dummyMessages)
         
         self.sections = self.messages
@@ -72,19 +73,20 @@ class SecondNode: ASDisplayNode, View, ASTableDataSource, ASTableDelegate {
         
     }
     
-    
     override func didLoad() {
         view.backgroundColor = .cyan
+        print("Node didLoad()")
     }
     
     func bind(reactor: Reactor) {
+        print("Node bind()")
         tableNode.rx.setDelegate(self)
             .disposed(by: disposeBag)
         
         self.sections
-            .do(onNext: { [weak self] _ in
-                self?.batchContext?.completeBatchFetching(true)
-            })
+//            .do(onNext: { [weak self] _ in
+//                self?.batchContext?.completeBatchFetching(true)
+//            })
             .bind(to: tableNode.rx.items(dataSource: animatedDataSource))
             .disposed(by: disposeBag)
         
@@ -92,6 +94,7 @@ class SecondNode: ASDisplayNode, View, ASTableDataSource, ASTableDelegate {
             .asObservable()
             .subscribe(onNext: { [weak self] context in
                 self?.batchContext = context
+                self?.batchContext?.completeBatchFetching(true)
             })
             .disposed(by: disposeBag)
             
@@ -101,6 +104,7 @@ class SecondNode: ASDisplayNode, View, ASTableDataSource, ASTableDelegate {
 extension SecondNode {
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        print("Node layoutSpecThatFits()")
         let display = self.tableNodeLayoutSpec(constrainedSize)
         return display
     }
@@ -127,10 +131,13 @@ extension SecondNode {
 //    }
     
     func shouldBatchFetch(for tableNode: ASTableNode) -> Bool {
+        print("Node shouldBatchFetch()")
         return true
     }
     
 //    func tableNode(_ tableNode: ASTableNode, willBeginBatchFetchWith context: ASBatchContext) {
+// 스크롤할 때 미리 데이터 받아오는 게 필요하다면 사용.
+    //
 //    }
 }
 

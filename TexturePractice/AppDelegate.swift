@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    ASDisplayNode.shouldShowRangeDebugOverlay = true
+    ASDisplayNode.shouldShowRangeDebugOverlay = false
     
     let UIKitNavControllerMain = UINavigationController(rootViewController: MainViewController())
     UIKitNavControllerMain.tabBarItem = .init(title: "Main", image: nil, selectedImage: nil)
@@ -38,7 +38,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
     return true
   }
-  
-  
 }
 

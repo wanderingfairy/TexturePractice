@@ -18,7 +18,7 @@ PODS:
   - PINRemoteImage/PINCache (3.0.3):
     - PINCache (~> 3.0.3)
     - PINRemoteImage/Core
-  - ReactorKit (2.1.1):
+  - ReactorKit (2.1.0):
     - RxSwift (~> 5.0)
     - WeakMapTable (~> 1.1)
   - RxCocoa (5.1.1):
@@ -39,6 +39,10 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - RxTexture2 (1.2.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+    - Texture (~> 3.0)
   - RxViewController (1.0.0):
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
@@ -76,6 +80,7 @@ DEPENDENCIES:
   - RxDataSources-Texture (~> 1.3)
   - RxOptional
   - RxSwift
+  - RxTexture2
   - RxViewController
   - SnapKit
   - SwiftRichString
@@ -95,6 +100,7 @@ SPEC REPOS:
     - RxOptional
     - RxRelay
     - RxSwift
+    - RxTexture2
     - RxViewController
     - SnapKit
     - SwiftRichString
@@ -118,13 +124,14 @@ SPEC CHECKSUMS:
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
-  ReactorKit: 6d894a20c3d508344320901cd8e386fde92df4b6
+  ReactorKit: 12a93358c554bb3f167b16b14c40374fa9cd5acd
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxDataSources-Texture: b2db41c0ece2366dbd0189ef2903076c37d62dab
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxTexture2: a111717cb8ebbb2250aa31a907e518a132871e86
   RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftRichString: d61b807db1f8834c26fee92b6dd3e1be2dc5af03
@@ -132,6 +139,6 @@ SPEC CHECKSUMS:
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: e8d5ccf59a76b4c3173f397904614e6fe398d1bb
+PODFILE CHECKSUM: 91f31a79868d632b259b0a8a49204e4cce551de4
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.0.rc.1

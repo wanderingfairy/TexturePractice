@@ -39,7 +39,7 @@ class ThirdViewController: UIViewController {
         tableView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.width.equalToSuperview()
-            $0.height.equalTo(view.safeAreaLayoutGuide.snp.height)
+            $0.height.equalTo(view.snp.height)
             $0.centerX.equalToSuperview()
         }
     }
@@ -54,5 +54,9 @@ extension ThirdViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier) as? TableViewCell
         cell?.configure(message: self.messages[indexPath.row])
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return nil
     }
 }

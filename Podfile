@@ -16,6 +16,7 @@ target 'TexturePractice' do
   pod 'RxOptional'
   pod 'RxViewController'
   pod 'RxDataSources-Texture', '~> 1.3'
+  pod 'RxTexture2'
   pod 'SnapKit'
   pod 'ReactorKit'
   pod 'DeepDiff'
