@@ -27,8 +27,20 @@ class ProfileHeaderNode: ASDisplayNode, View {
 
     var disposeBag: DisposeBag = DisposeBag()
     
+    override init() {
+        super.init()
+        self.reactor = ProfileHeaderNodeReactor(provider: ServiceProvider())
+        self.automaticallyManagesSubnodes = true
+        self.automaticallyRelayoutOnSafeAreaChanges = true
+    }
+    
     func bind(reactor: ProfileHeaderNodeReactor) {
         
+    }
+    
+    override func didLoad() {
+        super.didLoad()
+        self.view.backgroundColor = .orange
     }
     
 }

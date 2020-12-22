@@ -15,10 +15,13 @@ import RxDataSources
 import RxDataSources_Texture
 import ReactorKit
 
-class ProfileASDKViewController: ASDKViewController<ASDisplayNode> {
+class ProfileASDKViewController: ASDKViewController<ASDisplayNode>{
+    
+
     
     override init() {
         super.init(node: ProfileDisplayNode())
+        self.node.backgroundColor = .white
         self.node.automaticallyManagesSubnodes = true
         node.automaticallyRelayoutOnSafeAreaChanges = true
     }

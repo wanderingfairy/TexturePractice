@@ -1,9 +1,8 @@
 //
-//  ProfileItemNode.swift
-//  xlab-iOS
+//  ProfilePagerNode.swift
+//  TexturePractice
 //
 //  Created by xlab on 2020/12/22.
-//  Copyright © 2020 xlab. All rights reserved.
 //
 
 import UIKit
@@ -22,25 +21,25 @@ import PINRemoteImage
 import SwiftRichString
 import Then
 
-class ProfileItemNode: ASDisplayNode, View {
-    typealias Reactor = ProfileItemNodeReactor
+
+class ProfilePagerNode: ASPagerNode, View {
+    
+    typealias Reactor = ProfilePagerNodeReactor
 
     var disposeBag: DisposeBag = DisposeBag()
     
     override init() {
         super.init()
-        self.reactor = ProfileItemNodeReactor(provider: ServiceProvider())
+        self.reactor = ProfilePagerNodeReactor(provider: ServiceProvider())
         self.automaticallyManagesSubnodes = true
         self.automaticallyRelayoutOnSafeAreaChanges = true
     }
     
-    func bind(reactor: ProfileItemNodeReactor) {
+    func bind(reactor: ProfilePagerNodeReactor) {
         
     }
     
     override func didLoad() {
         super.didLoad()
-        self.view.backgroundColor = .cyan
     }
-    
 }

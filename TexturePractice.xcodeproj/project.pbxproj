@@ -37,6 +37,8 @@
 		F6FE56B82591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */; };
 		F6FE56B92591E6DF00DFF614 /* ProfileASDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */; };
 		F6FE56D72591E88100DFF614 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56D62591E88100DFF614 /* ServiceProviderType.swift */; };
+		F6FE56DF2591EC5100DFF614 /* ProfilePagerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56DE2591EC5100DFF614 /* ProfilePagerNode.swift */; };
+		F6FE56E42591EC5B00DFF614 /* ProfilePagerNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56E32591EC5B00DFF614 /* ProfilePagerNodeReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDisplayNodeReactor.swift; sourceTree = "<group>"; };
 		F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileASDKViewController.swift; sourceTree = "<group>"; };
 		F6FE56D62591E88100DFF614 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
+		F6FE56DE2591EC5100DFF614 /* ProfilePagerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePagerNode.swift; sourceTree = "<group>"; };
+		F6FE56E32591EC5B00DFF614 /* ProfilePagerNodeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePagerNodeReactor.swift; sourceTree = "<group>"; };
 		FC19E866B4733756C8C6AB10 /* Pods_TexturePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -270,6 +274,8 @@
 				F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */,
 				F6FE56AD2591E6DF00DFF614 /* ProfileDisplayNode.swift */,
 				F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */,
+				F6FE56DE2591EC5100DFF614 /* ProfilePagerNode.swift */,
+				F6FE56E32591EC5B00DFF614 /* ProfilePagerNodeReactor.swift */,
 				F6FE56AB2591E6DF00DFF614 /* ProfileHeaderNode.swift */,
 				F6FE56AC2591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift */,
 				F6FE56A82591E6DF00DFF614 /* ProfileAlbumNode.swift */,
@@ -524,6 +530,7 @@
 				F6FE56D72591E88100DFF614 /* ServiceProviderType.swift in Sources */,
 				F6FE56B12591E6DF00DFF614 /* ProfileAlbumNode.swift in Sources */,
 				150083292574035B003FBCCD /* ASLayoutElementStyle+Extension.swift in Sources */,
+				F6FE56E42591EC5B00DFF614 /* ProfilePagerNodeReactor.swift in Sources */,
 				150083242573FD91003FBCCD /* URL.swift in Sources */,
 				F6FE56B52591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift in Sources */,
 				1500824425716955003FBCCD /* FirstNode.swift in Sources */,
@@ -533,6 +540,7 @@
 				1500827B25739228003FBCCD /* FirstReactor.swift in Sources */,
 				F6FE56B82591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift in Sources */,
 				F677F53225748E7C00D02E0B /* CellNode.swift in Sources */,
+				F6FE56DF2591EC5100DFF614 /* ProfilePagerNode.swift in Sources */,
 				150081C325715A3C003FBCCD /* MainViewController.swift in Sources */,
 				F677F52525748C8500D02E0B /* SecondNode.swift in Sources */,
 				F677F53A2574951400D02E0B /* MessageModel.swift in Sources */,

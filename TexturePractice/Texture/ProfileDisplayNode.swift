@@ -23,19 +23,24 @@ import SwiftRichString
 import Then
 
 
-
 class ProfileDisplayNode: ASDisplayNode, View {
     typealias Reactor = ProfileDisplayNodeReactor
 
     var disposeBag: DisposeBag = DisposeBag()
     
-    // MARK: - Coordinator
-//    private let coordinator = AuthenticationCoordinator()
+    lazy var pagerNode: ASPagerNode = {
+        let node = ASPagerNode()
+        node.backgroundColor = .blue
+        return node
+    }()
     
     override init() {
         super.init()
         self.reactor = ProfileDisplayNodeReactor(provider: ServiceProvider())
         self.automaticallyManagesSubnodes = true
+        self.automaticallyRelayoutOnSafeAreaChanges = true
+        pagerNode.setDelegate(self)
+        pagerNode.setDataSource(self)
     }
     
     func bind(reactor: ProfileDisplayNodeReactor) {
@@ -46,4 +51,23 @@ class ProfileDisplayNode: ASDisplayNode, View {
         super.didLoad()
     }
     
+}
+
+extension ProfileDisplayNode: ASPagerDelegate, ASPagerDataSource {
+    func numberOfPages(in pagerNode: ASPagerNode) -> Int {
+        2
+    }
+    func pagerNode(_ pagerNode: ASPagerNode, nodeBlockAt index: Int) -> ASCellNodeBlock {
+        // TODO: - 셀노드 대신 DisplayNode 반환시켜서 만드는 법 찾기.
+        let node = ASCellNode( { () -> ASDisplayNode in
+            switch index {
+            case 0:
+                return ProfileAlbumNode()
+            default:
+                return ProfileItemNode()
+            }
+        }, didLoadBlock: nil)
+        
+        return node
+    }
 }
