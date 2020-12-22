@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     UIKitNavControllerSecond.tabBarItem = .init(title: "Second", image: nil, selectedImage: nil)
     let tabBarController = UITabBarController()
     
-    let UIKitNavControllerThird = UINavigationController(rootViewController: ThirdViewController())
+    let UIKitNavControllerThird = UINavigationController(rootViewController: ProfileASDKViewController())
     UIKitNavControllerThird.tabBarItem = .init(title: "Third", image: nil, selectedImage: nil)
     
     tabBarController.viewControllers = [UIKitNavControllerMain, UIKitNavControllerSecond, UIKitNavControllerThird]

@@ -36,6 +36,7 @@
 		F6FE56B72591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AE2591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift */; };
 		F6FE56B82591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */; };
 		F6FE56B92591E6DF00DFF614 /* ProfileASDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */; };
+		F6FE56D72591E88100DFF614 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56D62591E88100DFF614 /* ServiceProviderType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		F6FE56AE2591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAlbumNodeReactor.swift; sourceTree = "<group>"; };
 		F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDisplayNodeReactor.swift; sourceTree = "<group>"; };
 		F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileASDKViewController.swift; sourceTree = "<group>"; };
+		F6FE56D62591E88100DFF614 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
 		FC19E866B4733756C8C6AB10 /* Pods_TexturePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -265,15 +267,16 @@
 		F6FE56A72591E6DF00DFF614 /* Texture */ = {
 			isa = PBXGroup;
 			children = (
-				F6FE56A82591E6DF00DFF614 /* ProfileAlbumNode.swift */,
-				F6FE56A92591E6DF00DFF614 /* ProfileItemNodeReactor.swift */,
-				F6FE56AA2591E6DF00DFF614 /* ProfileItemNode.swift */,
+				F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */,
+				F6FE56AD2591E6DF00DFF614 /* ProfileDisplayNode.swift */,
+				F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */,
 				F6FE56AB2591E6DF00DFF614 /* ProfileHeaderNode.swift */,
 				F6FE56AC2591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift */,
-				F6FE56AD2591E6DF00DFF614 /* ProfileDisplayNode.swift */,
+				F6FE56A82591E6DF00DFF614 /* ProfileAlbumNode.swift */,
 				F6FE56AE2591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift */,
-				F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */,
-				F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */,
+				F6FE56AA2591E6DF00DFF614 /* ProfileItemNode.swift */,
+				F6FE56A92591E6DF00DFF614 /* ProfileItemNodeReactor.swift */,
+				F6FE56D62591E88100DFF614 /* ServiceProviderType.swift */,
 			);
 			path = Texture;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				F677F54C2574CC0A00D02E0B /* TableViewCell.swift in Sources */,
 				F6FE56B92591E6DF00DFF614 /* ProfileASDKViewController.swift in Sources */,
 				F6FE56B22591E6DF00DFF614 /* ProfileItemNodeReactor.swift in Sources */,
+				F6FE56D72591E88100DFF614 /* ServiceProviderType.swift in Sources */,
 				F6FE56B12591E6DF00DFF614 /* ProfileAlbumNode.swift in Sources */,
 				150083292574035B003FBCCD /* ASLayoutElementStyle+Extension.swift in Sources */,
 				150083242573FD91003FBCCD /* URL.swift in Sources */,

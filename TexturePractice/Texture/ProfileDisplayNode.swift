@@ -22,13 +22,15 @@ import PINRemoteImage
 import SwiftRichString
 import Then
 
+
+
 class ProfileDisplayNode: ASDisplayNode, View {
     typealias Reactor = ProfileDisplayNodeReactor
 
     var disposeBag: DisposeBag = DisposeBag()
     
     // MARK: - Coordinator
-    private let coordinator = AuthenticationCoordinator()
+//    private let coordinator = AuthenticationCoordinator()
     
     override init() {
         super.init()
