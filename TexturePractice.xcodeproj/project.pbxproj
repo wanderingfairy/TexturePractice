@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		150081BF25715A3C003FBCCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150081BE25715A3C003FBCCD /* AppDelegate.swift */; };
 		150081C325715A3C003FBCCD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150081C225715A3C003FBCCD /* MainViewController.swift */; };
-		150081C825715A3D003FBCCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150081C725715A3D003FBCCD /* Assets.xcassets */; };
 		150081CB25715A3D003FBCCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150081C925715A3D003FBCCD /* LaunchScreen.storyboard */; };
 		150081D625715A3D003FBCCD /* TexturePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150081D525715A3D003FBCCD /* TexturePracticeTests.swift */; };
 		150081E125715A3D003FBCCD /* TexturePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150081E025715A3D003FBCCD /* TexturePracticeUITests.swift */; };
@@ -39,6 +38,16 @@
 		F6FE56D72591E88100DFF614 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56D62591E88100DFF614 /* ServiceProviderType.swift */; };
 		F6FE56DF2591EC5100DFF614 /* ProfilePagerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56DE2591EC5100DFF614 /* ProfilePagerNode.swift */; };
 		F6FE56E42591EC5B00DFF614 /* ProfilePagerNodeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE56E32591EC5B00DFF614 /* ProfilePagerNodeReactor.swift */; };
+		F6FE56F02592EA7B00DFF614 /* NotoSansCJKkr-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6FE56E92592EA7B00DFF614 /* NotoSansCJKkr-DemiLight.otf */; };
+		F6FE56F12592EA7B00DFF614 /* NotoSansCJKkr-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6FE56EA2592EA7B00DFF614 /* NotoSansCJKkr-Black.otf */; };
+		F6FE56F22592EA7B00DFF614 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6FE56EB2592EA7B00DFF614 /* NotoSansCJKkr-Medium.otf */; };
+		F6FE56F32592EA7B00DFF614 /* Spoqa-Han-Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6FE56EC2592EA7B00DFF614 /* Spoqa-Han-Sans-Bold.ttf */; };
+		F6FE56F42592EA7B00DFF614 /* Spoqa-Han-Sans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6FE56ED2592EA7B00DFF614 /* Spoqa-Han-Sans-Regular.ttf */; };
+		F6FE56F52592EA7B00DFF614 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6FE56EE2592EA7B00DFF614 /* NotoSansCJKkr-Regular.otf */; };
+		F6FE56F62592EA7B00DFF614 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6FE56EF2592EA7B00DFF614 /* NotoSansCJKkr-Bold.otf */; };
+		F6FE571B2593125D00DFF614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6FE571A2593125D00DFF614 /* Assets.xcassets */; };
+		F6FE573A25932C8000DFF614 /* ProfileHeaderCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE573925932C8000DFF614 /* ProfileHeaderCellNode.swift */; };
+		F6FE573F25932D4C00DFF614 /* ProfileHeaderCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE573E25932D4C00DFF614 /* ProfileHeaderCellReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +74,6 @@
 		150081BB25715A3C003FBCCD /* TexturePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexturePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		150081BE25715A3C003FBCCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		150081C225715A3C003FBCCD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		150081C725715A3D003FBCCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		150081CA25715A3D003FBCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		150081CC25715A3D003FBCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		150081D125715A3D003FBCCD /* TexturePracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TexturePracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +110,16 @@
 		F6FE56D62591E88100DFF614 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
 		F6FE56DE2591EC5100DFF614 /* ProfilePagerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePagerNode.swift; sourceTree = "<group>"; };
 		F6FE56E32591EC5B00DFF614 /* ProfilePagerNodeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePagerNodeReactor.swift; sourceTree = "<group>"; };
+		F6FE56E92592EA7B00DFF614 /* NotoSansCJKkr-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-DemiLight.otf"; sourceTree = "<group>"; };
+		F6FE56EA2592EA7B00DFF614 /* NotoSansCJKkr-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Black.otf"; sourceTree = "<group>"; };
+		F6FE56EB2592EA7B00DFF614 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		F6FE56EC2592EA7B00DFF614 /* Spoqa-Han-Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa-Han-Sans-Bold.ttf"; sourceTree = "<group>"; };
+		F6FE56ED2592EA7B00DFF614 /* Spoqa-Han-Sans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa-Han-Sans-Regular.ttf"; sourceTree = "<group>"; };
+		F6FE56EE2592EA7B00DFF614 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		F6FE56EF2592EA7B00DFF614 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		F6FE571A2593125D00DFF614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6FE573925932C8000DFF614 /* ProfileHeaderCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCellNode.swift; sourceTree = "<group>"; };
+		F6FE573E25932D4C00DFF614 /* ProfileHeaderCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCellReactor.swift; sourceTree = "<group>"; };
 		FC19E866B4733756C8C6AB10 /* Pods_TexturePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexturePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,14 +176,15 @@
 		150081BD25715A3C003FBCCD /* TexturePractice */ = {
 			isa = PBXGroup;
 			children = (
+				F6FE56E82592EA7B00DFF614 /* Fonts */,
 				F677F5542574D33100D02E0B /* Model */,
 				F677F5502574D2F700D02E0B /* First */,
 				F677F5512574D2FC00D02E0B /* Second */,
 				F6FE56A72591E6DF00DFF614 /* Texture */,
 				F677F5522574D30100D02E0B /* Third */,
 				150081BE25715A3C003FBCCD /* AppDelegate.swift */,
-				150081C725715A3D003FBCCD /* Assets.xcassets */,
 				150081C925715A3D003FBCCD /* LaunchScreen.storyboard */,
+				F6FE571A2593125D00DFF614 /* Assets.xcassets */,
 				150081CC25715A3D003FBCCD /* Info.plist */,
 				150083232573FD91003FBCCD /* URL.swift */,
 				150083282574035B003FBCCD /* ASLayoutElementStyle+Extension.swift */,
@@ -274,17 +293,33 @@
 				F6FE56B02591E6DF00DFF614 /* ProfileASDKViewController.swift */,
 				F6FE56AD2591E6DF00DFF614 /* ProfileDisplayNode.swift */,
 				F6FE56AF2591E6DF00DFF614 /* ProfileDisplayNodeReactor.swift */,
-				F6FE56DE2591EC5100DFF614 /* ProfilePagerNode.swift */,
-				F6FE56E32591EC5B00DFF614 /* ProfilePagerNodeReactor.swift */,
 				F6FE56AB2591E6DF00DFF614 /* ProfileHeaderNode.swift */,
 				F6FE56AC2591E6DF00DFF614 /* ProfileHeaderNodeReactor.swift */,
+				F6FE56DE2591EC5100DFF614 /* ProfilePagerNode.swift */,
+				F6FE56E32591EC5B00DFF614 /* ProfilePagerNodeReactor.swift */,
 				F6FE56A82591E6DF00DFF614 /* ProfileAlbumNode.swift */,
 				F6FE56AE2591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift */,
 				F6FE56AA2591E6DF00DFF614 /* ProfileItemNode.swift */,
 				F6FE56A92591E6DF00DFF614 /* ProfileItemNodeReactor.swift */,
 				F6FE56D62591E88100DFF614 /* ServiceProviderType.swift */,
+				F6FE573925932C8000DFF614 /* ProfileHeaderCellNode.swift */,
+				F6FE573E25932D4C00DFF614 /* ProfileHeaderCellReactor.swift */,
 			);
 			path = Texture;
+			sourceTree = "<group>";
+		};
+		F6FE56E82592EA7B00DFF614 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F6FE56E92592EA7B00DFF614 /* NotoSansCJKkr-DemiLight.otf */,
+				F6FE56EA2592EA7B00DFF614 /* NotoSansCJKkr-Black.otf */,
+				F6FE56EB2592EA7B00DFF614 /* NotoSansCJKkr-Medium.otf */,
+				F6FE56EC2592EA7B00DFF614 /* Spoqa-Han-Sans-Bold.ttf */,
+				F6FE56ED2592EA7B00DFF614 /* Spoqa-Han-Sans-Regular.ttf */,
+				F6FE56EE2592EA7B00DFF614 /* NotoSansCJKkr-Regular.otf */,
+				F6FE56EF2592EA7B00DFF614 /* NotoSansCJKkr-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,7 +431,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				150081CB25715A3D003FBCCD /* LaunchScreen.storyboard in Resources */,
-				150081C825715A3D003FBCCD /* Assets.xcassets in Resources */,
+				F6FE56F52592EA7B00DFF614 /* NotoSansCJKkr-Regular.otf in Resources */,
+				F6FE56F32592EA7B00DFF614 /* Spoqa-Han-Sans-Bold.ttf in Resources */,
+				F6FE56F12592EA7B00DFF614 /* NotoSansCJKkr-Black.otf in Resources */,
+				F6FE56F42592EA7B00DFF614 /* Spoqa-Han-Sans-Regular.ttf in Resources */,
+				F6FE56F02592EA7B00DFF614 /* NotoSansCJKkr-DemiLight.otf in Resources */,
+				F6FE56F22592EA7B00DFF614 /* NotoSansCJKkr-Medium.otf in Resources */,
+				F6FE571B2593125D00DFF614 /* Assets.xcassets in Resources */,
+				F6FE56F62592EA7B00DFF614 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +571,7 @@
 				F6FE56B22591E6DF00DFF614 /* ProfileItemNodeReactor.swift in Sources */,
 				F6FE56D72591E88100DFF614 /* ServiceProviderType.swift in Sources */,
 				F6FE56B12591E6DF00DFF614 /* ProfileAlbumNode.swift in Sources */,
+				F6FE573F25932D4C00DFF614 /* ProfileHeaderCellReactor.swift in Sources */,
 				150083292574035B003FBCCD /* ASLayoutElementStyle+Extension.swift in Sources */,
 				F6FE56E42591EC5B00DFF614 /* ProfilePagerNodeReactor.swift in Sources */,
 				150083242573FD91003FBCCD /* URL.swift in Sources */,
@@ -548,6 +591,7 @@
 				F6FE56B72591E6DF00DFF614 /* ProfileAlbumNodeReactor.swift in Sources */,
 				F677F50825747D3B00D02E0B /* SecondViewController.swift in Sources */,
 				F677F5472574CB2400D02E0B /* ThirdViewController.swift in Sources */,
+				F6FE573A25932C8000DFF614 /* ProfileHeaderCellNode.swift in Sources */,
 				150081BF25715A3C003FBCCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,19 +28,13 @@ class ProfileDisplayNode: ASDisplayNode, View {
 
     var disposeBag: DisposeBag = DisposeBag()
     
-    lazy var pagerNode: ASPagerNode = {
-        let node = ASPagerNode()
-        node.backgroundColor = .blue
-        return node
-    }()
+    lazy var headerNode = ProfileHeaderNode()
     
     override init() {
         super.init()
         self.reactor = ProfileDisplayNodeReactor(provider: ServiceProvider())
         self.automaticallyManagesSubnodes = true
         self.automaticallyRelayoutOnSafeAreaChanges = true
-        pagerNode.setDelegate(self)
-        pagerNode.setDataSource(self)
     }
     
     func bind(reactor: ProfileDisplayNodeReactor) {
@@ -53,21 +47,8 @@ class ProfileDisplayNode: ASDisplayNode, View {
     
 }
 
-extension ProfileDisplayNode: ASPagerDelegate, ASPagerDataSource {
-    func numberOfPages(in pagerNode: ASPagerNode) -> Int {
-        2
-    }
-    func pagerNode(_ pagerNode: ASPagerNode, nodeBlockAt index: Int) -> ASCellNodeBlock {
-        // TODO: - 셀노드 대신 DisplayNode 반환시켜서 만드는 법 찾기.
-        let node = ASCellNode( { () -> ASDisplayNode in
-            switch index {
-            case 0:
-                return ProfileAlbumNode()
-            default:
-                return ProfileItemNode()
-            }
-        }, didLoadBlock: nil)
-        
-        return node
+extension ProfileDisplayNode {
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        return ASInsetLayoutSpec(insets: .init(top: self.safeAreaInsets.top, left: 0, bottom: 0, right: 0), child: headerNode)
     }
 }

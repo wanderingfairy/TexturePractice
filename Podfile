@@ -22,6 +22,7 @@ target 'TexturePractice' do
   pod 'DeepDiff'
   pod 'PINRemoteImage', :git => 'https://github.com/pinterest/PINRemoteImage', :branch => 'master'
   pod 'SwiftRichString'
+  pod 'SkeletonView'
 
   target 'TexturePracticeTests' do
     inherit! :search_paths

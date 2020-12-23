@@ -22,13 +22,13 @@ import PINRemoteImage
 import SwiftRichString
 import Then
 
-class ProfileItemNode: ASDisplayNode, View {
+class ProfileItemNode: ASCollectionNode, View {
     typealias Reactor = ProfileItemNodeReactor
 
     var disposeBag: DisposeBag = DisposeBag()
     
-    override init() {
-        super.init()
+    override init(collectionViewLayout layout: UICollectionViewLayout) {
+        super.init(collectionViewLayout: layout)
         self.reactor = ProfileItemNodeReactor(provider: ServiceProvider())
         self.automaticallyManagesSubnodes = true
         self.automaticallyRelayoutOnSafeAreaChanges = true
